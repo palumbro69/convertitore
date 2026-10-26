@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+
+.immagini{
+    width: 100px;
+}
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
