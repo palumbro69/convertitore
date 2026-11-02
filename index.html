@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>Document</title>
 </head>
-<body>
+
+<body class="dark" id="sfondo" >
     <h1 class="titolo">CONVERTITORE VALUTA</h1>
+
+     <i class="bi bi-toggle-on" onclick="dark()">light mode</i>
+    
+
     <h3>EURO</h3>
-    <img class="immagini" src="./images/europa.svg"> 
+
+    <img class="immagini" src="./images/europa.svg">
     <form>
-        <input type="number" name="" id="insert">
+        <input type="number" name="" id="insert" min="0" oninput="converti()">
     </form>
-    <div class="row container">
-        <div class="col-xs-12"> 
-            <h3>Dollaro Americano</h3>
-            <img class="immagini"src="./images/usa.webp" alt="USA">
-        </div>
-        <div class="col-xs-12">
-            <h3>Sterline</h3>
-            <img class="immagini" src="./images/uk.svg">
-        </div>
-        <div class="col-xs-12s">
-            <h3>Yen</h3>
-            <img class="immagini" src="./images/giappo.svg">
+
+
+
+    <div class="container">
+        <div class="row m-5">
+            <div class="col-sm-4">
+                <h3>Dollaro Americano</h3>
+                <img class="immagini" src="./images/usa.webp" alt="USA">
+                <p id="Dol"></p>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Sterline</h3>
+                <img class="immagini" src="./images/uk.svg" alt="Regno Unito">
+                <p id="Ste"></p>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Yen</h3>
+                <img class="immagini" src="./images/giappo.svg" alt="Giappone">
+                <p id="Yen"></p>
+            </div>
         </div>
     </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
